@@ -1,0 +1,113 @@
+.branch {
+   
+   &__heading {
+      padding: 2rem 5rem;
+   }
+
+   &__headings {
+      font-size: 4rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      text-align: center;
+      @media only screen and (max-width: $bp-largest) {
+         font-size: 3rem;
+      }
+      @media only screen and (max-width: $bp-largest) {
+         font-size: 2.3rem;
+      }
+      
+      
+   }
+
+   &__location {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(max-content, 1fr));
+      grid-gap: 4rem;
+      padding: 3rem 5rem;
+      @media only screen and (max-width: $bp-largest) {
+         
+      }
+      @media only screen and (max-width: $bp-large) {
+         grid-template-columns: repeat(2, minmax(max-content, 1fr));
+         grid-gap: 3rem;
+      }
+      @media only screen and (max-width: $bp-medium) {
+         grid-template-columns: repeat(2, minmax(max-content, 1fr));
+         grid-gap: 2rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+         grid-template-columns: repeat(1, minmax(max-content, 1fr));
+         grid-gap: 2rem;
+      }
+   }
+
+   &__locations {
+      // display: grid;
+      // grid-template-columns: repeat(3, minmax(max-content, 1fr));
+      // grid-gap: 4rem;
+      
+   }
+
+
+}
+
+.area {
+   background-color: rgb(233, 233, 233);
+   padding: 1.8rem;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   max-height: fit-content;
+   max-width: fit-content;
+   position: absolute;
+   bottom: .4rem;
+   z-index: 10;
+   border-radius: .5rem;
+   &__heading {
+      padding: .7rem;
+      width: 100%;
+      text-align: center;
+
+
+      &-icon {
+         height: 4rem;
+         width: 4rem;
+         fill: $color-orange;
+      }
+   }
+   &__details {
+      padding: .7rem;
+      text-align: left;
+   }
+
+   &__para {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: .4rem;
+
+   }
+   &__icon {
+      color: $color-orange;
+      margin-right: .8rem;
+   }
+
+
+
+
+}
+
+.map-details {
+   position: relative;
+   &__box {
+      padding: 1rem;
+
+      
+   }
+   iframe {
+      height: 35rem;
+      width: 100%;
+      border-radius: .5rem;
+   }
+   
+}

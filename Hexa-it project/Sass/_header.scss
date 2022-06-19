@@ -1,0 +1,106 @@
+.header {
+   padding: 0 5rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   // background-color: aqua;
+   height: 10rem;
+   @media only screen and (max-width: $bp-largest) {
+      
+   }
+   @media only screen and (max-width: $bp-large) {
+   
+   }
+   @media only screen and (max-width: $bp-medium) {
+      padding: 0 2rem;
+   }
+   
+   
+   &__box {
+      position: relative;
+      top: 1rem;
+   }
+
+   &__logo {
+      height: 15rem;
+      width: 15rem;
+      margin-top: -1.6rem;
+      margin-left: 3rem;
+
+      @media only screen and (max-width: $bp-largest) {
+         height: 13rem;
+         width: 13rem;
+      }
+      @media only screen and (max-width: $bp-large) {
+         height: 11rem;
+         width: 11rem;
+      }
+      @media only screen and (max-width: $bp-medium) {
+         height: 10rem;
+         width: 10rem;
+      }
+   }
+}
+
+.headers {
+   flex: 0 0 30%;
+   display: flex;
+   justify-content: space-evenly;
+   // background-color: forestgreen;
+   
+   &__link {
+
+      &:link,
+      &:visited {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: .5rem 1rem;
+         text-decoration: none;
+         color: $color-text;
+         font-size: 1.5rem;
+         font-weight: 600;
+         border-radius: 3px;
+         text-transform: uppercase;
+         transition: all .2s;
+
+         @media only screen and (max-width: $bp-medium) {
+            font-size: 1.2rem;
+         }
+      }
+
+      &:hover {
+         background-color: $color-hover;
+         
+      }
+      
+      &:active {
+         background-color: $color-hover;
+         transform: translateY(2px);
+         
+         &:not(:first-child) {
+            
+            
+         }
+         
+      }
+
+      &:not(:last-child) {
+         margin-right: 1.5rem;
+      }
+      
+      
+   }
+
+   &__icon {
+      height: 1.7rem;
+      width: 1.7rem;
+      margin-right: .5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        height: 1.3rem;
+        width: 1.3rem;
+      }
+   }
+}
+

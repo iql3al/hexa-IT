@@ -1,0 +1,58 @@
+.footer {
+   padding: 3rem 5rem;
+   background-color: $color-hover;
+
+
+   &__box {
+      // width: 82%;
+      // padding: 2rem;
+      // margin: auto;
+      // display: flex;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(min-content, 1fr));
+      
+      
+      
+   }
+
+   &__navi {
+      // flex: 1 0 0;
+      // display: flex;
+      // flex-direction: column;
+      // justify-self: center;
+      // margin: 0 8rem;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      
+   }
+
+   &__lnk {
+      
+      &:link,
+      &:visited {
+         text-decoration: none;
+         font-size: 1.3rem;
+         font-weight: 400;
+         padding: 1rem 1.5rem;
+         color: $color-grey;
+         
+         // background-color: aqua;
+      }
+      
+      &:hover {
+         color: $color-orange;
+      }
+   }
+
+   &__icon {
+      margin-right: .8rem;
+   }
+
+   &__copyright {
+      margin-top: 4rem;
+      font-size: 1.6rem;
+      color: $color-text;
+      font-weight: 500;
+   }
+}
